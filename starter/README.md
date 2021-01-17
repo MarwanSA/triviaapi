@@ -219,3 +219,24 @@ Response
 "success": true
 }
 
+* POST /quizzes
+URI:- http://127.0.0.1:5000/quizzes
+JSON file format
+{
+    "quiz_category": {
+        "type": "Science",
+        "id": 1
+    },
+    "previous_questions": [1]
+}
+Response
+{
+    "question": {
+        "answer": "Alexander Fleming",
+        "category": 1,
+        "difficulty": 3,
+        "id": 21,
+        "question": "Who discovered penicillin?"
+    },
+    "success": true
+}
